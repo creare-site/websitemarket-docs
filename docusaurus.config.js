@@ -18,15 +18,15 @@ const config = {
     favicon: 'img/favicon.png',
 
     // Set the production url of your site here
-    url: 'https://docs.app-generator.dev',
+    url: 'https://www.blog.websitemarket.ro',
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: '/',
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: 'app-generator', // Usually your GitHub org/user name.
-    projectName: 'rocket-docs', // Usually your repo name.
+    organizationName: 'creare-site', // Usually your GitHub org/user name.
+    projectName: 'websitemarket-docs', // Usually your repo name.
     trailingSlash: false, // for github pages compatibility
 
     onBrokenLinks: 'throw',
@@ -63,14 +63,14 @@ const config = {
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
-                        'https://github.com/app-generator/rocket-docs/tree/main/'
+                        'https://github.com/creare-site/websitemarket-docs/tree/main/'
                 },
                 blog: {
                     showReadingTime: true,
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
-                        'https://github.com/app-generator/rocket-docs/tree/main/',
+                        'https://github.com/creare-site/websitemarket-docs/tree/main/',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
@@ -88,7 +88,7 @@ const config = {
                 title: '',
                 logo: {
                     href: '/',
-                    alt: 'Rocket Generator',
+                    alt: 'WebsiteMarket',
                     src: 'img/logo.png',
                 },
                 items: [
@@ -96,11 +96,11 @@ const config = {
                         type: 'doc',
                         docId: 'intro',
                         position: 'left',
-                        label: 'Docs',
+                        label: 'Intro',
                     },
                     { to: '/blog', label: 'Blog', position: 'left' },
                     {
-                        href: 'https://github.com/app-generator/rocket-docs',
+                        href: 'https://github.com/creare-site/websitemarket-docs',
                         label: 'GitHub',
                         position: 'right',
                     },
@@ -113,7 +113,7 @@ const config = {
                         title: 'Content',
                         items: [
                             {
-                                label: 'Docs',
+                                label: 'Intro',
                                 to: '/',
                             },
                             {
@@ -123,33 +123,33 @@ const config = {
                         ],
                     },
                     {
-                        title: 'Services',
+                        title: 'Servicii',
                         items: [
                             {
-                                label: 'Django Generator',
-                                href: 'https://app-generator.dev/',
+                                label: 'Cine Suntem',
+                                href: 'https://websitemarket.ro/#company-info-section',
                             },
                             {
-                                label: 'Community',
-                                href: 'https://discord.gg/fZC6hup',
+                                label: 'Servicii',
+                                href: 'https://websitemarket.ro/#services-section',
                             },
                         ],
                     },
                     {
-                        title: 'Resources',
+                        title: 'Contact',
                         items: [
                             {
-                                label: 'Intro (video)',
-                                href: 'https://www.youtube.com/watch?v=4taJFTzu3EE',
+                                label: 'hello@websitemarket.ro',
+                                href: 'mail:hello@websitemarket.ro',
                             },
                             {
-                                label: 'Open Issues',
-                                href: 'https://github.com/app-generator/rocket-docs/issues',
+                                label: 'Tel: 0766-612-322',
+                                href: 'tel:0766612322',
                             },
                         ],
                     },
                 ],
-                copyright: `&copy; ${new Date().getFullYear()} Rocket Generator`,
+                copyright: `&copy; ${new Date().getFullYear()} WebsiteMarket`,
             },
             prism: {
                 theme: lightCodeTheme,
