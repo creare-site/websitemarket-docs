@@ -13,8 +13,8 @@ const customFields = {
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'Rocket Generator',
-    tagline: 'Generate secure Apps and APIs on top of Django',
+    title: 'WebsiteMarket',
+    tagline: 'Site-uri, eCommerce, Hosting',
     favicon: 'img/favicon.png',
 
     // Set the production url of your site here
