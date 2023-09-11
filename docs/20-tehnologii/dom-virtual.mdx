@@ -1,0 +1,56 @@
+---
+sidebar_position : 1
+title            : DOM Virtual
+sidebar_label    : DOM Virtual
+---
+
+# DOM Virtual
+
+**DOM (Document Object Model) virtual** este un concept utilizat în dezvoltarea web pentru a îmbunătăți eficiența și performanța actualizărilor paginilor web. 
+Acesta este adesea asociat cu biblioteci și framework-uri JavaScript, cum ar fi React, Vue.js și Angular. 
+
+Iată **ce înseamnă DOM virtual și cum funcționează**
+
+<br />
+
+## **DOM Real (DOM real)** 
+
+Într-o pagină web, DOM-ul reprezintă structura și ierarhia elementelor HTML ale paginii. 
+De exemplu, fiecare element HTML, cum ar fi o imagine, un paragraf sau un buton, este reprezentat în DOM ca un obiect. 
+Atunci când se efectuează modificări asupra paginii web, DOM-ul real este actualizat pentru a reflecta aceste modificări.
+
+## **Problema DOM-ului real**
+
+Manipularea directă a DOM-ului real poate fi costisitoare din punct de vedere al performanței, deoarece actualizările frecvente pot duce la reîncărcarea și redesenarea repetată a întregii pagini web, 
+ceea ce poate face ca aplicațiile web să fie mai lente și mai puțin responsive.
+
+## **DOM Virtual (DOM virtual)** 
+
+Pentru a rezolva această problemă, multe framework-uri JavaScript introduc conceptul de **DOM virtual**. 
+`DOM-ul virtual` este o reprezentare în memorie a structurii DOM reale a paginii web, dar este utilizat pentru a face actualizări și reconcilierea înainte de a actualiza cu adevărat DOM-ul real. 
+
+Cu alte cuvinte, atunci când se fac modificări în aplicație, acestea sunt mai întâi aplicate pe DOM-ul virtual, 
+apoi sunt comparate cu starea actuală a DOM-ului virtual și apoi sunt actualizate doar acele elemente care necesită modificări în DOM-ul real.
+
+## **Beneficiile DOM-ului virtual**
+
+- **Performanță îmbunătățită:** Utilizarea DOM-ului virtual reduce numărul de actualizări directe ale DOM-ului real, ceea ce duce la o performanță mai bună a aplicației web.
+- **Reactivitate:** Acesta facilitează gestionarea reactivă a actualizărilor UI, deoarece permite actualizarea componentelor doar atunci când este necesar.
+- **Ușurință în dezvoltare:** Dezvoltatorii pot lucra cu o reprezentare în memorie a DOM-ului, ceea ce face dezvoltarea mai ușoară și mai predictibilă.
+
+## **Exemple de utilizare** 
+
+Framework-uri precum React utilizează un DOM virtual pentru a eficientiza actualizările interfeței utilizatorului. 
+Când se schimbă starea unei componente React, acesta creează un nou DOM virtual, compară-l cu starea anterioară și actualizează doar diferențele în DOM-ul real, ceea ce face ca actualizările să fie rapide și eficiente.
+
+<br />
+
+`Concluzii`: În concluzie, DOM-ul virtual este un concept important în dezvoltarea web modernă, care contribuie la îmbunătățirea performanței și a reactivității aplicațiilor web. 
+Este utilizat într-o serie de framework-uri și biblioteci JavaScript pentru a eficientiza manipularea DOM-ului și actualizările interfeței utilizatorului. 
+
+<br />
+
+## Resurse
+
+- 👉 [Servicii Creare Site Prezentare si eCommerce](https://websitemarket.ro/)
+- 👉 [Support - Comunitate Discord](https://discord.gg/MFRQmAk) - Discuta cu alti antreprenori din comunitate
