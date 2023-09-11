@@ -1,0 +1,56 @@
+---
+sidebar_position : 1
+title            : DOM vs. Virtual DOM
+sidebar_label    : DOM vs. V.DOM
+---
+
+# DOM vs. Virtual DOM
+
+**DOM** (Document Object Model) și **DOM Virtual** (Virtual DOM) sunt două concepte legate de dezvoltarea web care se referă la modul în care browser-ele web reprezintă și manipulează paginile web, 
+dar ele au abordări diferite și servesc scopuri diferite. 
+
+> Iată o **comparație între DOM și DOM Virtual**:
+
+## **DOM (Document Object Model**
+
+### **Realitatea:** 
+
+DOM reprezintă structura și ierarhia elementelor HTML ale unei pagini web așa cum sunt ele afișate în browser, într-un moment dat. Este o reprezentare a paginii web în timp real.
+
+### **Manipulare directă:** 
+
+Cu DOM, dezvoltatorii pot accesa și manipula elementele HTML și proprietățile lor direct din JavaScript. Aceasta înseamnă că modificările aduse DOM-ului se reflectă imediat în afișarea paginii web.
+
+### **Performanța poate fi o problemă:** 
+
+Manipularea repetată a DOM-ului real poate duce la o performanță scăzută, deoarece actualizările frecvente pot necesita reîncărcarea și redesenarea paginii web.
+
+<br />
+
+## **DOM Virtual (Virtual DOM):**
+
+### **Reprezentare în memorie:** 
+
+DOM virtual este o reprezentare în memorie a structurii DOM a paginii web, dar nu este direct conectat la afișarea paginii web. Este utilizat pentru a eficientiza actualizările și reconcilierea.
+
+### **Manipulare intermediară:** 
+
+Cu DOM virtual, modificările se fac mai întâi pe reprezentarea sa în memorie, apoi se compară cu starea anterioară a DOM-ului virtual și apoi se actualizează doar acele elemente care necesită modificări în DOM-ul real. Acest proces ajută la evitarea actualizărilor inutile ale DOM-ului real.
+
+### **Eficiență și performanță:** 
+
+DOM virtual contribuie la îmbunătățirea performanței aplicațiilor web, deoarece reduce numărul de actualizări ale DOM-ului real și permite optimizări mai bune ale actualizărilor.
+
+<br />
+
+`Concluzii`: DOM reprezintă structura reală a unei pagini web, iar manipularea sa este imediată, dar poate avea un impact negativ asupra performanței. 
+În schimb, DOM virtual este o reprezentare intermediară a DOM-ului, utilizată pentru a eficientiza actualizările și a îmbunătăți performanța aplicațiilor web. 
+
+Conceptul de DOM virtual este adesea folosit în biblioteci și framework-uri JavaScript pentru dezvoltarea web, cum ar fi React și Vue.js, pentru a face manipularea DOM-ului mai eficientă și mai reactivă.
+
+<br />
+
+## Resurse
+
+- 👉 [Servicii Creare Site Prezentare si eCommerce](https://websitemarket.ro/)
+- 👉 [Support - Comunitate Discord](https://discord.gg/MFRQmAk) - Discuta cu alti antreprenori din comunitate
